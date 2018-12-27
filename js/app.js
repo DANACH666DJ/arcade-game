@@ -64,6 +64,10 @@ Player.prototype.render = function () {
 
 // method to be able to move the player with the keys
 Player.prototype.handleInput = function (keyPress) {
+    // allows the user to move to the left by the axis x and also prevents him from leaving the canvas
+    if (keyPress == 'left' && this.x > 0) {
+        this.x -= 102;
+    };
 
 };
 
