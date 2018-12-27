@@ -17,10 +17,10 @@ Once the player manages to reach the top (the water) the game will inform us of 
 In order to carry out this game they have needed several skills of js, html and css.
 They are the following:
 
-Object-Oriented JavaScript
-constructor functions to create multiple Enemy instances
-prototypal inheritance
-HTML5 Canvas API
+Object-Oriented JavaScript,
+constructor functions to create multiple Enemy instances,
+prototypal inheritance,
+HTML5 Canvas API,
 resource loading via immediately-invoked function expressions (IIFE)
 
 In future improvements it is planned to add different levels of difficulty and different prizes that the user will achieve by including items on the canvas.
