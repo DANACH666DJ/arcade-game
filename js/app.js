@@ -64,11 +64,23 @@ Player.prototype.render = function () {
 
 // method to be able to move the player with the keys
 Player.prototype.handleInput = function (keyPress) {
-    // allows the user to move to the left by the axis x and also prevents him from leaving the canvas
+    // allows the user to move to the left,right,up and down by the axis x,y and also prevents him from leaving the canvas
     if (keyPress == 'left' && this.x > 0) {
         this.x -= 102;
+    } else if (keyPress == 'right' && this.x < 405) {
+        this.x += 102;
+    } else if (keyPress == 'up' && this.y > 0) {
+        this.y -= 83;
+    } else if (keyPress == 'down' && this.y < 405) {
+        this.y += 83;
+    } 
+    // if the player reaches the water, the position of the player is automatically reset to its initial position
+    if (this.y < 0) {
+        setTimeout(() => {
+            this.x = 202;
+            this.y = 405;
+        }, 500);
     };
-
 };
 
 
