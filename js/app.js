@@ -18,6 +18,20 @@ Enemy.prototype.update = function(dt) {
     this.x += this.speed * dt;
     // which will ensure the game runs at the same speed for
     // all computers.
+    // every time the enemy leaves the canvas, it appears again with a different speed
+    if (this.x > 510) {
+        this.x = -50;
+        this.speed = 100 + Math.floor(Math.random() * 222);
+    };
+
+    // here the collisions between the enemies and the player are checked
+    if (player.x < this.x + 80 &&
+        player.x + 80 > this.x &&
+        player.y < this.y + 60 &&
+        60 + player.y > this.y) {
+        player.x = 202;
+        player.y = 405;
+    };
 };
 
 // Draw the enemy on the screen, required method for game
