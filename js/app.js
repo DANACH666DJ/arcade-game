@@ -25,6 +25,31 @@ Enemy.prototype.render = function() {
 // This class requires an update(), render() and
 // a handleInput() method.
 
+var Player = function(x, y) {
+     // these variables allow us to manage the player by the x and y axes 
+     this.x = x;
+     this.y = y;
+ 
+     //The image that we will use to give our player an aspect
+     this.player = 'images/char-boy.png';
+}
+
+Player.prototype.update = function (dt) {
+
+};
+
+// Draw the player on the screen, required method for game
+Player.prototype.render = function () {
+    ctx.drawImage(Resources.get(this.player), this.x, this.y);
+};
+
+
+// method to be able to move the player with the keys
+Player.prototype.handleInput = function (keyPress) {
+
+};
+
+
 
 // Now instantiate your objects.
 // Place all enemy objects in an array called allEnemies
