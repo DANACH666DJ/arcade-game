@@ -1,4 +1,5 @@
 // Enemies our player must avoid
+let level = 1; 
 var Enemy = function(x, y, speed) {
     // Variables applied to each of our instances go here,
     // we've provided one for you to get started
@@ -76,10 +77,16 @@ Player.prototype.handleInput = function (keyPress) {
     } 
     // if the player reaches the water, the position of the player is automatically reset to its initial position
     if (this.y < 0) {
+        document.querySelector(".modal").style.display ="block";
+        level+=1;
+        var text = document.createTextNode(`Level ${level}`);
+        document.querySelector("#level").textContent= `Level ${level}`;
         setTimeout(() => {
             this.x = 202;
             this.y = 405;
-        }, 500);
+            document.querySelector(".win").textContent= `Congratulations, you have  won the level ${level}`;
+            document.querySelector(".modal").style.display ="none";
+        }, 800);
     };
 };
 
@@ -89,11 +96,19 @@ Player.prototype.handleInput = function (keyPress) {
 // Place all enemy objects in an array called allEnemies
 var allEnemies = [];
 
+// we place the enemies in different positions on the canvas
+var enemyLocation = [63, 147, 230];
+
+
+// For each enemy located on the y axis from 0 on the x axis move at a speed of 300 
+enemyLocation.forEach(function (locationY) {
+    enemy = new Enemy(0, locationY, 300);
+    allEnemies.push(enemy);
+});
 
 
 // Place the player object in a variable called player
 var player = new Player(202, 405);
-
 
 
 // This listens for key presses and sends the keys to your

@@ -1,4 +1,4 @@
-# Classic Arcade Game Clone Project
+# Classic Arcade Game 
 
 ## Table of Contents
 
@@ -7,13 +7,23 @@
 
 ## Instructions
 
-Use this [rubric](https://review.udacity.com/#!/rubrics/15/view) for self-checking your submission.
+This game is based on the classic Frogger arcade game.
 
-Make sure the functions you write are **object-oriented** - either class functions (like `Player` and `Enemy`) or class prototype functions such as `Enemy.prototype.checkCollisions`. Also make sure that the keyword `this` is used appropriately within your class and class prototype functions to refer to the object the function is called upon.
+The main goal of this game is to move the player through a virtual board (generator by canvas) which allows us to interact with the different pieces that compose it.
+That is to say the enemies (cockroaches) and the player itself, to be able to interact and move the player we will use the keys up / right / left / down of our keyboard.
 
-Your **README.md** file should be updated with instructions on both how to 1. Run and 2. Play your arcade game.
+Once the player manages to reach the top (the water) the game will inform us of the different levels that we are going through with a modal and an informative text on the top.
 
-For detailed instructions on how to get started, check out this [guide](https://docs.google.com/document/d/1v01aScPjSWCCWQLIpFqvg3-vXLH2e8_SZQKC8jNO0Dc/pub?embedded=true).
+In order to carry out this game they have needed several skills of js, html and css.
+They are the following:
+
+Object-Oriented JavaScript
+constructor functions to create multiple Enemy instances
+prototypal inheritance
+HTML5 Canvas API
+resource loading via immediately-invoked function expressions (IIFE)
+
+In future improvements it is planned to add different levels of difficulty and different prizes that the user will achieve by including items on the canvas.
 
 ## Contributing
 
