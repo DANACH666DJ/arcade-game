@@ -3,8 +3,13 @@
 ## Table of Contents
 
 - [Instructions](#instructions)
-- [Instructions of execution](#instructionsOfExecution)
+- [Instructions of execution](#instructions of execution)
 - [Contributing](#contributing)
+
+# Project Requirements
+
+1. https://review.udacity.com/#!/rubrics/15/view 
+Arcade game requirements.
 
 ## Instructions
 
