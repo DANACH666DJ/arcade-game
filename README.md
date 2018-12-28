@@ -3,6 +3,7 @@
 ## Table of Contents
 
 - [Instructions](#instructions)
+- [Instructions of execution](#instructionsOfExecution)
 - [Contributing](#contributing)
 
 ## Instructions
@@ -14,16 +15,20 @@ That is to say the enemies (cockroaches) and the player itself, to be able to in
 
 Once the player manages to reach the top (the water) the game will inform us of the different levels that we are going through with a modal and an informative text on the top.
 
-In order to carry out this game they have needed several skills of js, html and css.
-They are the following:
+* In order to carry out this game they have needed several skills of js, html and css.
+  They are the following:
 
-Object-Oriented JavaScript,
-constructor functions to create multiple Enemy instances,
-prototypal inheritance,
-HTML5 Canvas API,
-resource loading via immediately-invoked function expressions (IIFE)
+    * Object-Oriented JavaScript,
+    * constructor functions to create multiple Enemy instances,
+    * prototypal inheritance,
+    * HTML5 Canvas API,
+    * resource loading via immediately-invoked function expressions (IIFE)
 
 In future improvements it is planned to add different levels of difficulty and different prizes that the user will achieve by including items on the canvas.
+
+## Instructions of execution
+
+
 
 ## Contributing
 
