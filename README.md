@@ -3,7 +3,6 @@
 ## Table of Contents
 
 - [Instructions](#instructions)
-- [Instructions of execution](#instructions of execution)
 - [Contributing](#contributing)
 
 # Project Requirements
@@ -33,7 +32,9 @@ In future improvements it is planned to add different levels of difficulty and d
 
 ## Instructions of execution
 
-
+1. As a first step to run the game you should download or clone this repo in your local work environment.
+2. Then you should run the index.html file that is in the base of the project and then you should see the game    running.
+2. Once all these steps are done you can enjoy the game using the keys mentioned above in the instructions above. Each time you reach the water, the level will change as well as the speed of your enemies.
 
 ## Contributing
 
